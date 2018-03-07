@@ -127,7 +127,7 @@ font-size: 20px; font-weight: bold; border: 3px solid #fff; border-radius: 10px;
 
 .modal-content .popup-body form p.message{color:#d84134; font-size: 14px; height: 30px; line-height: 30px;}
 .modal-content .popup-body form button{height: 50px; font-size: 18px; color:#555; font-weight: bold; padding: 20px 50px; }
-.modal-content .popup-body form #btn-login{color: #4abded}
+.modal-content .popup-body form #btn-login-popup{color: #4abded}
 .modal-content .popup-body form #btn-sign{float: right; position: absolute;}
 .modal-content .popup-body > a{font-size: 18px; padding: 20px 0; width: 150px;
   text-align: center; color:#333;}
@@ -186,7 +186,7 @@ top: 178px;
 display: block;
 width: 100%;
 height: 60px;
-background: #4abded;d
+background: #4abded;
 }
 nav{
   position: relative;
