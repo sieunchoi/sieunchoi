@@ -550,77 +550,13 @@ top: 0;
  .store #map{background: #b6b6b6;}
 
 /* 지도 정보 */
-#map .map-popup{background: #666;}
-#map .map-popup h2{
+#content{background: #666;}
+#content h2{
   color: #fff;
   font-size: 24px; font-weight: bold;
 }
-#map .map-popup button{
-position: absolute;
-    margin: 0 auto;
-    padding: 5px 10px;
-    color: #fff;
-    background: #1abc9c;
-    font-size: 14px;
-    font-weight: bold;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    text-align: center;}
-
-
-
-
-
-
-
-
-  /* INFORMATION */
-  .information{
-    box-sizing: border-box;
-        text-align: center;
-        width: 100%;
-        padding: 40px 0;
-  }
-  .information .wrap{
-    width: 100%;; margin: 0 auto;
-  }
-  .info-left{
-    box-sizing: border-box;
-    border-top: 4px solid #ff84f5;
-    border-bottom: 4px solid #ff84f5;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .info-left h2{padding-top: 20px; font-size: 25px;}
-  .info-left p{padding-bottom: 20px; font-size: 20px;}
-  .info-left ul{border-top: 1px solid #888; border-bottom: 1px solid #888; padding: 10px 0;margin-bottom: 25px;}
-  .info-left ul li{
-    padding: 9px;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 20px;
-  }
-  .info-left ul li a{color: #777;}
-  .info-left ul::after{content: '';height: 4px; background: #ff84f5;}
-  .info-center {
-    padding: 40px 0;}
-  .info-center #video{margin: 0 auto; background: #999;}
-  .info-center #video button{    font-size: 35px;
-    color: #fff;
-    top: 45%;
-    position: relative;}
-  .info-right{margin: 0 auto;
-    border-top: 4px solid #ff84f5; border-bottom: 4px solid #ff84f5;}
-  .info-right h2{padding-top: 20px; font-size: 40px;}
-  .info-right p{font-size: 28px; padding: 20px 0; line-height: 30px;}
-  .info-right .day{}
-  .info-right .weather{padding: 0 0 30px;}
-  .info-right .weather p{padding: 20px 0; border-top: 1px solid #888; border-bottom: 1px solid #888; }
-  .info-right strong{font-size: 58px; letter-spacing: -5px; line-height: 90px;}
-  .info-right .icon-sun{font-size: 200px; padding: 20px 0 ;}
-  .info-right::after{content: ''; clear: both; display: table;}
+#content ul{padding: 10px;}
+#content ul li{line-height: 20px;}
 
 
 footer{

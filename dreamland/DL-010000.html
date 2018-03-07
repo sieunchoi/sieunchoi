@@ -352,6 +352,54 @@
 
       </div>
     </div>
+    <script>
+
+    //api key=AIzaSyB18ZefbOWSZw-nmiRB1N9t0Oje6ZF-dZw
+    function initMap() {
+      // 기본 지도
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 37.556133, lng: 126.939037},
+        zoom: 18
+      });
+
+      // 마커가 포함된 지도
+      var uluru = {lat: 37.556133, lng: 126.939037};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+
+      // 정보 더보기
+      var contentString = '<div id="content">'+
+      '<h2>DREAM LAND<br>드림랜드</h2>'+
+      '<ul>'+
+      '<li>서울특별시 서대문구 신촌동</li>'+
+      '<li>Tel : 02.1234.1234</li>'+
+      '<li>Site : www.dreamland.com</li>'+
+      '</ul>'+
+      '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'TJOEUN Cafe'
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB18ZefbOWSZw-nmiRB1N9t0Oje6ZF-dZw&callback=initMap" async defer>
+    </script>
 
 
   </body>
