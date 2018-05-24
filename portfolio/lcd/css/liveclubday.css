@@ -502,7 +502,6 @@ table.timetable td.none::after{ background: none; }
   background: #ee155c;
   border: 2px solid #ee155c;
 }
-
 .favorite, .share{
   width: 20px;
   height: 20px;
@@ -724,12 +723,12 @@ figure.effect-apollo:hover p {
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
 }
 .event-col .back{
-  background-image:url(../images/gallery-01.jpg);
+  background-image:url(../images/event-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.event-col:nth-child(2) .back{background-image:url(../images/notice-ticket.jpg);}
-.event-col:nth-child(3) .back{background-image:url(../images/notice-surpporters.jpg);}
+.event-col:nth-child(2) .back{background-image:url(../images/event-02.jpg);}
+.event-col:nth-child(3) .back{background-image:url(../images/event-03.jpg);}
 
 .event-col .back .overlay{
   background: linear-gradient(to bottom right, #ff4a5d, #3452ff);
