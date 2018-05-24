@@ -477,9 +477,8 @@
       <h1>ARTIST</h1>
       <p>라이브 클럽 데이 연합 소속 10개 클럽을 소개합니다.<br>
         로고를 클릭하시면 클럽 상세정보를 확인하실 수 있습니다</p>
-      </div>
+    </div>
     <div class="slick-items">
-
       <div class="artist-slide badman" style="background-image:url(images/artist-badman.jpg);">
         <div class="artist-contents">
           <div class="artist-title">
@@ -556,7 +555,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -649,7 +647,6 @@
     </div>
   </section>
 
-
   <!-- 대관신청 -->
   <section class="booking-section bg-color" id="booking">
     <div class="container">
@@ -697,9 +694,7 @@
         </form>
       </div>
     </div>
-
   </section>
-
 
    <!-- footer -->
   <footer>
@@ -736,62 +731,59 @@
           <li><a href="#">아이디 찾기</a></li>
           <li><a href="#">비밀번호 찾기</a></li>
         </ul>
-        <!-- <p class="sign-up">아이디 / 비밀번호 찾기<a href="#"></a> </p> -->
       </div>
       </div>
     </div>
   </div>
 
 
-
-
   <script>
-  //팝업닫기
-  $('.popup .btn-close').on('click',function(){
-    //열려있는 팝업을 닫고 팝업백그라운드 제거
-    $('.popup').fadeOut(function(){$('.popup-bg').remove()});
-  })
+    //팝업닫기
+    $('.popup .btn-close').on('click',function(){
+      //열려있는 팝업을 닫고 팝업백그라운드 제거
+      $('.popup').fadeOut(function(){$('.popup-bg').remove()});
+    })
 
-  //로그인 팝업
-  $('#btn-login').on('click',function(){
-    $('.popup-login').fadeIn();
-    //팝업 백그라운드를 깔아준다.
-    $('body').append('<div class="popup-bg"></div>');
-  })
-  //로그인 input포커스
-  $('#id, #password').on('focus',function(){
-    $(this).prev('label').addClass('change');
-  }).on('focusout',function(){
-    $(this).prev('label').removeClass('change');
-  })
+    //로그인 팝업
+    $('#btn-login').on('click',function(){
+      $('.popup-login').fadeIn();
+      //팝업 백그라운드를 깔아준다.
+      $('body').append('<div class="popup-bg"></div>');
+    })
+    //로그인 input포커스
+    $('#id, #password').on('focus',function(){
+      $(this).prev('label').addClass('change');
+    }).on('focusout',function(){
+      $(this).prev('label').removeClass('change');
+    })
 
 
 
-  $('.slick-items').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 1023,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+    $('.slick-items').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 
   </script>
 
