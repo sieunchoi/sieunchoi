@@ -251,10 +251,6 @@ header {
   z-index: 999999;
 }
 
-.btn-menu span:nth-child(1) {
-  bottom: 4px;
-  top: auto;
-}
 .btn-menu span {
   right: 0;
   width: 20px;
@@ -263,6 +259,10 @@ header {
   position: absolute;
   top: 4px;
   transform-origin: -2px 1px;
+}
+.btn-menu span:nth-child(1) {
+	bottom: 4px;
+	top: auto;
 }
 .btn-menu span:nth-child(2) {
   top: 50%;
@@ -276,6 +276,7 @@ nav.gnb{
   text-align: center;
   right: -100%;
   width: 100%; height: 100vh;
+	transition: all .5s;
 }
 ul.pc-main{
   display: flex;

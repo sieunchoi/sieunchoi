@@ -6,16 +6,7 @@ header{ background: transparent;}
   .btn-menu span{background: #fff;}
   .search-icon-btn{filter: invert(1); opacity: 1;}
   .lang ul li a{color: #fff;}
-  /* video {
-  	position:fixed;
-  	top:0;
-  	left:0;
-  	min-width:100%;
-  	min-height:100%;
-  	width:auto;
-  	height:auto;
-  	z-index:-1;
-  } */
+
   #videoBg{
     position: fixed;
     right: 0; bottom: 0;
