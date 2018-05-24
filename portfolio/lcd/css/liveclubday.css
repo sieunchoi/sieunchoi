@@ -46,6 +46,8 @@ nav.navbar-default .navbar-nav>li>a {
   padding: 10px 0;
 }
 
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
 nav.navbar-default .navbar-nav li a.active,
 nav.navbar-default .navbar-nav li a.active:focus,
 nav.navbar-default .navbar-nav li a.active:hover { color: #F05F40; background: transparent;}
