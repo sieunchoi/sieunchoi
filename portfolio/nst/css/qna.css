@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+section.sub_main{background-image: url(../images/main_04.jpg);}
+.nav_left ul li{width: 33.33%;}
+.sub_tab ul li{width: 25%;}
+
+#accordion{
+  width:100%; margin: auto; padding: 20px 0 30px;
+  border-bottom: 1px solid #ededed;
+}
+#accordion h1{text-align: center; padding: 20px 0;}
+#accordion ul{
+}
+#accordion ul li{
+  border-bottom:1px solid #dbdbdb;
+  background: url(../images/question.png) 24px 30px no-repeat;
+}
+#accordion ul li:last-child{
+  border-bottom:0;
+}
+#accordion ul li>a{
+  position: relative;
+  display: block;
+  height: 78px;
+  margin: 0 30px 0 78px;
+  font-size: 15px;
+  text-decoration: none;
+}
+#accordion ul li>a em{
+  display: block;
+  padding: 18px 0 1px;
+  color: #757575;
+  font-size: 13px;
+  font-style: normal;
+}
+#accordion ul li>a::after{
+  position: absolute;
+  right: 20px;
+  content: '\e80a';
+  font-family: 'fontello';
+}
+#accordion ul li>a:hover{
+  color: #2052cb;
+}
+#accordion ul li .box{
+  display: none;
+  height: auto;
+  padding: 30px 30px 30px 78px;
+  text-align: left;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #f7f7f7;
+}
+.answer{}
+.answer a.link{}
+#accordion ul li .box.active{  display: block; }
+.box.active .line{  float: left; }
+.box.active .answer{ text-align: justify;}
+.board-pagination ul { width: 111px;}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: url(../images/qna.jpg) center no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+}
+.banner-cont{position: relative; top: 50%; transform: translateY(-50%); padding: 0 30px;}
+.banner p{font-size: 15px; padding-bottom: 15px;}
+.banner p em{font-size: 13px; font-style: normal;}
+.banner .btn{
+  cursor: pointer;
+  color: #fff;
+  background: #185cab;
+  height: 40px;
+}
+.banner .btn span{ font-size: 14px; }
+
+
+@media (max-width: 767px){
+  .search-bar { width: 100%;}
+  #accordion{padding-top: 0;}
+  #accordion ul li{background: none;}
+  #accordion ul li>a em{color: #2052cb;}
+  #accordion ul li>a{margin: 0 10px; padding-right: 30px; font-size: 14px;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+  #accordion ul li>a::after{right: 10px;}
+  #accordion ul li .box{padding: 20px;}
+}
