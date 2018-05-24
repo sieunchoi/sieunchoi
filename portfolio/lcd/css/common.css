@@ -16,6 +16,7 @@ body{
   color: #757575;
   line-height: 1.8;
 }
+h1,h2,h3 { line-height: 1.4; }
 
 strong{color: #ff4a5d; font-weight: bold;}
 
