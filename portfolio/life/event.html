@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Event</title>
+		<!-- css -->
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/fontello-codes.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/event.css">
+		<!-- script -->
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/life.js"></script>
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<header>
+	    <!-- 로고 -->
+	    <h1 class="logo"><a href="#"><img src="images/logo-trans.png" alt="Life"></a></h1>
+
+			<div class="pageLocation">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">EVENT</a></li>
+				</ul>
+			</div>
+
+	    <!-- 메뉴 -->
+	    <div class="menu">
+
+	      <span class="menu-title">MENU</span>
+	      <input type="checkbox" id="btn-menu">
+	      <label for="btn-menu" class="btn-menu">
+	        <span class="line line-01"></span>
+	        <span class="line line-02"></span>
+	        <span class="line line-03"></span>
+	      </label>
+
+	      <nav class="gnb">
+	        <ul class="pc-main">
+	          <li>
+	            <a href="#">
+	              <span>HOME</span>
+	              <div class="nav-img-01"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>ABOUT</span>
+	              <div class="nav-img-02"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>GALLERY</span>
+	              <div class="nav-img-03"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>EVENT</span>
+	              <div class="nav-img-04"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>INFORMATION</span>
+	              <div class="nav-img-05"></div>
+	            </a>
+	          </li>
+	        </ul>
+
+	        <div class="rights">
+	          <p>주최 ㅣ (주)디커뮤니케이션  유니크피스<br>Copyright ⓒ 라이프사진전</p>
+	        </div>
+
+	        <!-- 모바일 util -->
+	        <div class="m-util">
+	          <ul class="m-q-tab">
+	            <li><a href="#"><span>ENGLISH</span></a></li>
+	            <li><a href="#" style="background-position:-40px -40px;"><span>SEARCH</span></a></li>
+	            <li><a href="#" style="background-position:-80px -40px;"><span>LOGIN</span></a></li>
+	            <li><a href="#" style="background-position:right -40px;"><span>MEMBERSHIP</span></a></li>
+	          </ul>
+
+	          <div class="m-sns">
+	            <button><i class="icon icon-facebook"></i></button>
+	            <button><i class="icon icon-instagram"></i></button>
+	            <button><i class="icon icon-twitter"></i></button>
+	          </div>
+
+	        </div>
+
+	      </nav>
+
+	    </div>
+
+	    <!-- 언어 -->
+	    <div class="lang">
+	      <ul>
+	        <li><a href="#" class="active">KO</a></li>
+	        <li><a href="#">EN</a></li>
+	      </ul>
+
+	    </div>
+
+	    <!-- 소셜 아이콘 -->
+	    <ul class="social">
+	      <li><a href="#" class="social-facebook"></a><span class="skip">facebook</span> </li>
+	      <li><a href="#" class="social-instagram"></a><span class="skip">instagram</span> </li>
+	      <li><a href="#" class="social-youtube"></a><span class="skip">youtube</span> </li>
+	    </ul>
+
+	  </header>
+
+		<!-- 네비게이션 -->
+		<nav id="navigation">
+			<ul>
+				<li>
+					<a href="#section1" data-number="1">
+					 <span class="label">MOVIE NIGHT</span>
+					</a>
+				</li>
+				<li>
+					<a href="#section2" data-number="2">
+					 <span class="label">DOCENT</span>
+					</a>
+				</li>
+				<li>
+					<a href="#section3" data-number="3">
+					 <span class="label">LIFE LIGHT</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- 스크롤버튼 -->
+		<button id="bottom"></button>
+		<button id="up"></button>
+
+		<!-- 섹션 -->
+		<section id="section1" class="section">
+			<div class="container">
+				<div class="swiper-container movie">
+					<div class="swiper-wrapper">
+						<!-- 제임스딘 -->
+						<div class="swiper-slide movie-slide">
+							<div class="program-left">
+								<div class="cont-title">
+									<p>LIFE MOVIE NIGHT</p>
+									<h1>따뜻한 뱅쇼와 함께<br> 고전영화 한 편 어떠세요?</h1>
+								</div>
+								<div class="cont-text">
+									<p>"영원히 살 것 처럼 꿈꾸고 오늘 죽을 것 처럼 살아라"</p>
+									<p>라이프 사진전 X 에덴의 동쪽
+									<br>불멸의 아이콘 제임스딘
+									<br>그를 만날 수 있는 특별한 기회</p>
+
+									<ul class="cont-info">
+										<li><span>상영일 : 목요일 오후 7시-9시</span></li>
+										<li><span>장소 : 전시장 내 상영관</span> </li>
+										<li><span><strong>*</strong>무비나잇 참여자 대상 웰컴드링크 제공</span> </li>
+										<li><span><strong>*</strong>상영일에는 전시장 운영시간이 오후 9시까지 연장됩니다.</span> </li>
+									</ul>
+								</div>
+								<button class="btn more"><span>신청하기<i class="icon  icon-angle-right"></i></span></button>
+							</div>
+							<div class="program-right">
+								<div class="program-img" style="background-image: url(images/event-james.jpg);">
+									<div class="bookmark"></div>
+								</div>
+							</div>
+						</div>
+						<!-- 마를린먼로 -->
+						<div class="swiper-slide movie-slide">
+							<div class="program-left">
+								<div class="cont-title">
+									<p>LIFE MOVIE NIGHT</p>
+									<h1>따뜻한 뱅쇼와 함께<br> 고전영화 한 편 어떠세요?</h1>
+								</div>
+								<div class="cont-text">
+									<p>"난 그냥 다이아몬드를 치장할 새 곳을 찾을 뿐이랍니다"</p>
+									<p>라이프 사진전 X 신사는 금발을 좋아해
+									<br>20세기 최고의 섹시 아이콘 마를린 먼로
+									<br>그녀를 만날 수 있는 특별한 기회</p>
+
+									<ul class="cont-info">
+										<li><span>상영일 : 목요일 오후 7시-9시</span></li>
+										<li><span>장소 : 전시장 내 상영관</span> </li>
+										<li><span><strong>*</strong>무비나잇 참여자 대상 웰컴드링크 제공</span> </li>
+										<li><span><strong>*</strong>상영일에는 전시장 운영시간이 오후 9시까지 연장됩니다.</span> </li>
+									</ul>
+								</div>
+								<button class="btn more"><span>신청하기<i class="icon  icon-angle-right"></i></span></button>
+							</div>
+							<div class="program-right">
+								<div class="program-img" style="background-image: url(images/event-marilyn.jpg);">
+									<div class="bookmark"></div>
+								</div>
+							</div>
+						</div>
+						<!-- 오드리햅번 -->
+						<div class="swiper-slide movie-slide">
+							<div class="program-left">
+								<div class="cont-title">
+									<p>LIFE MOVIE NIGHT</p>
+									<h1>따뜻한 뱅쇼와 함께<br> 고전영화 한 편 어떠세요?</h1>
+								</div>
+								<div class="cont-text">
+									<p>"사람들은 서로 사랑하고 서로에게 속한채 살아가지. <br>그게 유일한 행복의 기회니까."</p>
+									<p>라이프 사진전 X 티파니에서 아침을<br>현대의 요정 오드리 햅번</p>
+
+									<ul class="cont-info">
+										<li><span>상영일 : 목요일 오후 7시-9시</span></li>
+										<li><span>장소 : 전시장 내 상영관</span> </li>
+										<li><span><strong>*</strong>무비나잇 참여자 대상 웰컴드링크 제공</span> </li>
+										<li><span><strong>*</strong>상영일에는 전시장 운영시간이 오후 9시까지 연장됩니다.</span> </li>
+									</ul>
+								</div>
+								<button class="btn more"><span>신청하기<i class="icon  icon-angle-right"></i></span></button>
+							</div>
+							<div class="program-right">
+								<div class="program-img" style="background-image: url(images/event-audrey.jpg);">
+									<div class="bookmark"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="movie-pagination "></div>
+					<div class="movie-button-next ">이전 상영작</div>
+					<div class="movie-button-prev ">다음 상영작</div>
+				</div>
+
+			</div>
+		</section>
+
+		<script>
+		var swiper = new Swiper('.movie', {
+			effect: 'fade',
+			pagination: {
+				el: '.movie-pagination',
+				type: 'fraction',
+			},
+			navigation: {
+				nextEl: '.movie-button-next',
+				prevEl: '.movie-button-prev',
+			},
+		});
+		</script>
+	</body>
+</html>

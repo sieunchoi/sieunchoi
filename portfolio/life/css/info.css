@@ -1,0 +1,58 @@
+[class*="bottom_"]{
+  width: 50%; float: left;
+  position: relative; padding: 30px; height: 100%;
+}
+
+.map{
+  padding: 0;
+  height: 100%;
+  position: relative;
+  right: 0;
+}
+#map{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+h3.head{
+  margin: 0.5em 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.adress{
+  position: relative;
+  padding-bottom: 20px;
+}
+.way{padding-bottom: 30px;
+}
+[class*="type_"]{
+  position: relative;
+  width: 100%;
+  padding: 0.5vw 0;
+}
+[class*="way_"] span{
+  : 14px;
+}
+[class*="type_"] h4{
+  padding: 0.5vw 0;
+}
+
+p.way_text{padding-left: 25px;}
+
+.map-info{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.map-info a{
+  padding: 13px 30px;
+  color: #d7d7d7;
+  border: 1px solid #d7d7d7;
+  font-weight: bold;
+  : 14px;
+  margin-top: 30px;
+}

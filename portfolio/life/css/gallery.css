@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+
+
+.contents-sub{
+  padding: 0.3vw 0 1vw;
+}
+.component{
+  width: 18px;
+}
+.quotes{
+  padding: 0.5vw 2vw;
+  font-size: 14px;
+  letter-spacing: 0px;
+  opacity: 0.6;
+}
+.contents-body{}
+.contents-body p{
+  font-size: 14px;
+  text-indent: 10px;
+  letter-spacing: 0;
+}
+.gallery_right{
+  position: relative;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.gallery {
+  height: 100%;
+  width: 100%;
+}
+
+
+.gallery-info{
+  position: relative;
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding: 20px 2.5vw;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.cont-text{font-size: 13px;}
+
+.btn.more{color: #fff; margin-top: 20px;}
+
+
+
+
+.gallery-img{
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 55%;
+  overflow: hidden;
+}
+.inner-img{
+  position: relative;
+  height: 500px;
+  width: 90%;
+  top: 50%;
+  margin: auto;
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 8px 30px 0 hsla(0, 0%, 0%, 0.4);
+}
+#section1 .inner-img { background-position: top;}
+
+
+
+/* MODAL */
+.flex {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalcontainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.modalcontainer.active {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg.jpg);
+}
+.modal.active {
+  display: block;
+}
+.modal .content {
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+}
+.modal .close {
+  cursor: pointer;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 999999;
+}
+.modal .close span {
+  top: 25px;
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 25px;
+  height: 1px;
+  display: block;
+  left: 12px;
+}
+.modal .close span:nth-child(1) {
+  transform: rotate(45deg);
+
+}
+.modal .close span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 14px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-fraction {
+  color: #fff;
+  left: unset;
+  right: 0;
+  font-size: 14px;
+  width: 50%;
+}
+.button-wrap{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 30px;
+}
+.swiper-button-next, .swiper-button-prev {
+  bottom: 10px;
+filter: invert(1);
+position: absolute;
+top: unset;
+width: 120px;
+height: 28px;
+margin-top: -22px;
+z-index: 10;
+cursor: pointer;
+background-size: 120px;
+background-position: center;
+background-repeat: no-repeat;
+}
+.swiper-button-next {
+  background-image: url(../images/arrow_right.png);
+    right: 25%;
+    left: auto;
+}
+.swiper-button-prev {
+  background-image: url(../images/arrow_left.png);
+    left: 25%;
+    right: auto;
+}
+.modal-img {
+  position: relative;
+  width: 50%; height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.modal-info {
+  position: relative;
+  width: 50%; height: 100%;
+  float: right;
+  color: #eee;
+  text-align: justify;
+  padding: 6vw;
+}
+
+.title{
+  color: #b09e89;
+  letter-spacing: 0;
+  font-size: 20px;;
+  line-height: 1.6;
+}
+.author{
+  color: #737373;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 0;
+  padding-bottom: .5vw;
+}
+.subtitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 1px;
+  background: #fff;
+}
+.subtitle{
+  position: relative;
+  letter-spacing: 0;
+  font-size: 16px;
+  padding-top: .5vw;
+  margin-top: 5px;
+  opacity: .8;
+}
+.small{
+  letter-spacing: 0;
+  font-size: 14px;
+  padding-top: 30px;
+  opacity: 0.65;
+}
+.modal-info .contents-text{
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-bottom: 1vw;
+  text-indent: 0;
+}

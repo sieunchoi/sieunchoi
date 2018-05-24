@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Event</title>
+		<!-- css -->
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/fontello-codes.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/gallery.css">
+		<!-- script -->
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fadethis.min.js"></script>
+		<script type="text/javascript" src="js/life.js"></script>
+	</head>
+	<body>
+		<!-- 헤더 -->
+		<header>
+	    <!-- 로고 -->
+	    <h1 class="logo"><a href="#"><img src="images/logo-trans.png" alt="Life"></a></h1>
+
+			<div class="pageLocation">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">GALLERY</a></li>
+				</ul>
+			</div>
+
+	    <!-- 메뉴 -->
+	    <div class="menu">
+
+	      <span class="menu-title">MENU</span>
+	      <input type="checkbox" id="btn-menu">
+	      <label for="btn-menu" class="btn-menu">
+	        <span class="line line-01"></span>
+	        <span class="line line-02"></span>
+	        <span class="line line-03"></span>
+	      </label>
+
+	      <nav class="gnb">
+	        <ul class="pc-main">
+	          <li>
+	            <a href="#">
+	              <span>HOME</span>
+	              <div class="nav-img-01"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>ABOUT</span>
+	              <div class="nav-img-02"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>GALLERY</span>
+	              <div class="nav-img-03"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>EVENT</span>
+	              <div class="nav-img-04"></div>
+	            </a>
+	          </li>
+	          <li>
+	            <a href="#">
+	              <span>INFORMATION</span>
+	              <div class="nav-img-05"></div>
+	            </a>
+	          </li>
+	        </ul>
+
+	        <div class="rights">
+	          <p>주최 ㅣ (주)디커뮤니케이션  유니크피스<br>Copyright ⓒ 라이프사진전</p>
+	        </div>
+
+	        <!-- 모바일 util -->
+	        <div class="m-util">
+	          <ul class="m-q-tab">
+	            <li><a href="#"><span>ENGLISH</span></a></li>
+	            <li><a href="#" style="background-position:-40px -40px;"><span>SEARCH</span></a></li>
+	            <li><a href="#" style="background-position:-80px -40px;"><span>LOGIN</span></a></li>
+	            <li><a href="#" style="background-position:right -40px;"><span>MEMBERSHIP</span></a></li>
+	          </ul>
+
+	          <div class="m-sns">
+	            <button><i class="icon icon-facebook"></i></button>
+	            <button><i class="icon icon-instagram"></i></button>
+	            <button><i class="icon icon-twitter"></i></button>
+	          </div>
+
+	        </div>
+
+	      </nav>
+
+	    </div>
+
+	    <!-- 검색 -->
+
+
+	    <!-- 언어 -->
+	    <div class="lang">
+	      <ul>
+	        <li><a href="#" class="active">KO</a></li>
+	        <li><a href="#">EN</a></li>
+	      </ul>
+
+	    </div>
+
+	    <!-- 소셜 아이콘 -->
+	    <ul class="social">
+	      <li><a href="#" class="social-facebook"></a><span class="skip">facebook</span> </li>
+	      <li><a href="#" class="social-instagram"></a><span class="skip">instagram</span> </li>
+	      <li><a href="#" class="social-youtube"></a><span class="skip">youtube</span> </li>
+	    </ul>
+
+	  </header>
+
+		<!-- 네비게이션 -->
+		<nav id="navigation">
+			<ul>
+				<li>
+					<a href="#section1" data-number="1">
+					 <span class="label">THIS IS LIFE</span>
+					</a>
+				</li>
+				<li>
+					<a href="#section2" data-number="2">
+					 <span class="label">ICON</span>
+					</a>
+				</li>
+				<li>
+					<a href="#section3" data-number="3">
+					 <span class="label">20th Century</span>
+					</a>
+				</li>
+				<li>
+					<a href="#section4" data-number="4">
+					 <span class="label">HOPE</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- 스크롤버튼 -->
+		<button id="bottom"></button>
+		<button id="up"></button>
+
+		<!-- 섹션 -->
+		<section id="section1" class="section">
+				<div class="gallery">
+					<div class="slide-left gallery-info">
+						<div class="contents-title">
+							<div class="point">
+								<span class="point-label">POINT</span><br>
+								<span class="point-number">01</span>
+							</div>
+							<h2>사진이 가장 위대했던 시대</h2>
+						</div>
+						<div class="contents-text">
+							<p>한 세기 뒤의 세상은 우리가 살고 있는 21세기를 어떻게 생각할까? 우리가 옛 시절의 향수때문에 팍팍한 지금의 현실에 투정하듯 아름답고 더 다정다감했던 시대로 기억할까? 아니면 섣불리 쥐여진 불덩이로 세상을 온통 파헤쳤던 혼돈의 세상으로 기억될까? </p>
+							<p>우리가 말과 글만으로는 기억할 수 없는 수많은 삶의 모습이 사진속에 담겨졌다. 그리고 그것은 21세기를 살고 있는 우리의 심장 어딘가에 파편처럼 박혀있다. 좋은 사진은 그 파편들에 아련한 통증을 울리게 한다. 그것이 행복한 것이던 슬픈 것이던 말이다.</p>
+							<button class="btn more">VIEW MORE<i class="icon icon-angle-right"></i></button>
+						</div>
+					</div>
+					<div class="slide-bottom gallery-img">
+						<div class="inner-img" style="background-image: url(images/gallery_01.jpg)"></div>
+					</div>
+				</div>
+
+		</section>
+
+		<section id="section2" class="section">
+				<div class="gallery">
+					<div class="slide-left gallery-info">
+						<div class="contents-title">
+							<div class="point">
+								<span class="point-label">POINT</span><br>
+								<span class="point-number">02</span>
+							</div>
+							<h2>사진이 가장 위대했던 시대</h2>
+						</div>
+						<div class="contents-text">
+							<p>역사의 소용돌이 속에서 20세기의 아이콘들이 탄생했다. 그 얼굴은 사진잡지 <라이프>가 함께 나누고 싶었던 시대 정신과 문화이기도 했다. 이름이 알려졌든, 알려지지 않았든, 그들을 시대의 표상으로 만든 것은 인간이 가진 자발성과 자유에 대한 확고한 믿음, 타인과 세계에 대한 책임감, 그리고 불굴의 의지였다. 그리고 그런 순간, 인물, 사건이 상징적인 사진들로 시각화 되었을 때 우리는 그 모습만으로도 세대를 넘어서 기억할 수 있게 되었다. </p>
+							<p> 우리가 그들을 기억해야 하는 이유는 무엇일까? 아마도 별을 바라보는 것과 같은 이유가 아닐까? 그들은 시대의 아이콘이자 말그대로 스타였으니까. </p>
+							<button class="btn more">VIEW MORE<i class="icon  icon-angle-right"></i></button>
+						</div>
+					</div>
+					<div class="slide-bottom gallery-img">
+						<div class="inner-img" style="background-image: url(images/gallery_02.jpg)"></div>
+					</div>
+				</div>
+		</section>
+
+		<section id="section3" class="section">
+				<div class="gallery">
+					<div class="slide-left gallery-info">
+						<div class="contents-title">
+							<div class="point">
+								<span class="point-label">POINT</span><br>
+								<span class="point-number">03</span>
+							</div>
+							<h2>사진이 가장 위대했던 시대</h2>
+						</div>
+						<div class="contents-text">
+							<p>19세기의 소설가 찰스 디킨스가 18세기의 시대를 소설로 써내려가면서 쓴 첫 문장은 20세기를 살았고 21세기를 살고 있는 우리에게 여전히 깊은 공감을 갖게한다. 오랫동안 인간은 직접 본 것과 전해 들은 것을 기록해왔다. 그렇게 기록된 것을 읽고 종합하여 역사를 세워왔다. 사진가들이 직접 마주한 시대를 사람들의 눈 앞에 펼쳐 보여주기 시작했을때 우리 모두는 역사의 추종자에서 목격자가 되었다. 좋은 사진은 아주 오래된 것 조차도 생생하게 살아있는 목소리를 가지고 있었기 때문이다. 1936년 11월, 대공황과 전쟁의 소용돌이속에서 포토저널리즘의 첨병으로 기억되는 <라이프>가 탄생했다. 특출한 사명감과 인간애를 가지고 인간과 세상을 기록했던 위대한 사진가들이 남긴 지난 세기를 만나보자.</p>
+							<button class="btn more">VIEW MORE<i class="icon  icon-angle-right"></i></button>
+						</div>
+					</div>
+					<div class="slide-bottom gallery-img">
+						<div class="inner-img" style="background-image: url(images/gallery_03.jpg)"></div>
+					</div>
+				</div>
+
+		</section>
+
+		<section id="section4" class="section">
+				<div class="gallery">
+					<div class="slide-left gallery-info">
+						<div class="contents-title">
+							<div class="point">
+								<span class="point-label">POINT</span><br>
+								<span class="point-number">04</span>
+							</div>
+							<h2>사진이 가장 위대했던 시대</h2>
+						</div>
+						<div class="contents-text">
+							<p>역사의 소용돌이 속에서 20세기의 아이콘들이 탄생했다. 그 얼굴은 사진잡지 <라이프>가 함께 나누고 싶었던 시대 정신과 문화이기도 했다. 이름이 알려졌든, 알려지지 않았든, 그들을 시대의 표상으로 만든 것은 인간이 가진 자발성과 자유에 대한 확고한 믿음, 타인과 세계에 대한 책임감, 그리고 불굴의 의지였다. 그리고 그런 순간, 인물, 사건이 상징적인 사진들로 시각화 되었을 때 우리는 그 모습만으로도 세대를 넘어서 기억할 수 있게 되었다. </p>
+							<p> 우리가 그들을 기억해야 하는 이유는 무엇일까? 아마도 별을 바라보는 것과 같은 이유가 아닐까? 그들은 시대의 아이콘이자 말그대로 스타였으니까. </p>
+							<button class="btn more">VIEW MORE<i class="icon  icon-angle-right"></i></button>
+						</div>
+					</div>
+					<div class="slide-bottom gallery-img">
+						<div class="inner-img" style="background-image: url(images/gallery_04.jpg)"></div>
+					</div>
+				</div>
+
+		</section>
+
+
+		<!-- MODAL -->
+	  <div class="modalcontainer">
+	    <div class="flex">
+	      <div class="modal">
+	        <div class="close"><span></span><span></span> </div>
+	        <div class="content">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-02.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">Troubled Korea loses its ‘tiger’</p>
+											<p class="author">Carl Mydans, 1949,</p>
+											<p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p>
+										</div>
+										<div class="contents-text">
+											<p>1949년 6월 26일, 백범 김구 선생이 머물던 경교장에서 총성이 울렸다.
+												<라이프>의 칼 마이던스 기자가 사고 직후 현장을 방문했다. 그는 총알이
+												지난 창문으로 보이는 경교장 앞뜰의 모습을 사진에 담았다. 김구 선생의
+												서거 당일 몰려든 국민들의 애도 물결이 그날의 참담한 분위기를 말해준다.
+												사진은 <라이프>1949년 7월호에 ‘혼란 속의 한국, 호랑이를 잃다.’라는
+												제목으로 실렸다. 김구 선생의 장례는 국민장으로 치러졌으며, 경교장
+												1층 동쪽 방에 빈소를 마련하고 시신을 보고 예를 올리게 하였는데
+												문상 행렬이 적십자 병원을 지나 서대문 사거리까지 이어졌다.</p>
+											<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-03.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">Troubled Korea loses its ‘tiger’</p>
+											<p class="author">Carl Mydans, 1949,</p>
+											<p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p>
+										</div>
+										<div class="contents-text">
+											<p>1949년 6월 26일, 백범 김구 선생이 머물던 경교장에서 총성이 울렸다.
+												<라이프>의 칼 마이던스 기자가 사고 직후 현장을 방문했다. 그는 총알이
+												지난 창문으로 보이는 경교장 앞뜰의 모습을 사진에 담았다. 김구 선생의
+												서거 당일 몰려든 국민들의 애도 물결이 그날의 참담한 분위기를 말해준다.
+												사진은 <라이프>1949년 7월호에 ‘혼란 속의 한국, 호랑이를 잃다.’라는
+												제목으로 실렸다. 김구 선생의 장례는 국민장으로 치러졌으며, 경교장
+												1층 동쪽 방에 빈소를 마련하고 시신을 보고 예를 올리게 하였는데
+												문상 행렬이 적십자 병원을 지나 서대문 사거리까지 이어졌다.</p>
+											<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-04.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">Troubled Korea loses its ‘tiger’</p>
+											<p class="author">Carl Mydans, 1949,</p>
+											<p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p>
+										</div>
+										<div class="contents-text">
+											<p>1949년 6월 26일, 백범 김구 선생이 머물던 경교장에서 총성이 울렸다.
+												<라이프>의 칼 마이던스 기자가 사고 직후 현장을 방문했다. 그는 총알이
+												지난 창문으로 보이는 경교장 앞뜰의 모습을 사진에 담았다. 김구 선생의
+												서거 당일 몰려든 국민들의 애도 물결이 그날의 참담한 분위기를 말해준다.
+												사진은 <라이프>1949년 7월호에 ‘혼란 속의 한국, 호랑이를 잃다.’라는
+												제목으로 실렸다. 김구 선생의 장례는 국민장으로 치러졌으며, 경교장
+												1층 동쪽 방에 빈소를 마련하고 시신을 보고 예를 올리게 하였는데
+												문상 행렬이 적십자 병원을 지나 서대문 사거리까지 이어졌다.</p>
+											<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-05.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">Troubled Korea loses its ‘tiger’</p>
+											<p class="author">Carl Mydans, 1949,</p>
+											<p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p>
+										</div>
+										<div class="contents-text">
+											<p>1949년 6월 26일, 백범 김구 선생이 머물던 경교장에서 총성이 울렸다.
+												<라이프>의 칼 마이던스 기자가 사고 직후 현장을 방문했다. 그는 총알이
+												지난 창문으로 보이는 경교장 앞뜰의 모습을 사진에 담았다. 김구 선생의
+												서거 당일 몰려든 국민들의 애도 물결이 그날의 참담한 분위기를 말해준다.
+												사진은 <라이프>1949년 7월호에 ‘혼란 속의 한국, 호랑이를 잃다.’라는
+												제목으로 실렸다. 김구 선생의 장례는 국민장으로 치러졌으며, 경교장
+												1층 동쪽 방에 빈소를 마련하고 시신을 보고 예를 올리게 하였는데
+												문상 행렬이 적십자 병원을 지나 서대문 사거리까지 이어졌다.</p>
+											<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-06.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">Troubled Korea loses its ‘tiger’</p>
+											<p class="author">Carl Mydans, 1949,</p>
+											<p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p>
+										</div>
+										<div class="contents-text">
+											<p>1949년 6월 26일, 백범 김구 선생이 머물던 경교장에서 총성이 울렸다.
+												<라이프>의 칼 마이던스 기자가 사고 직후 현장을 방문했다. 그는 총알이
+												지난 창문으로 보이는 경교장 앞뜰의 모습을 사진에 담았다. 김구 선생의
+												서거 당일 몰려든 국민들의 애도 물결이 그날의 참담한 분위기를 말해준다.
+												사진은 <라이프>1949년 7월호에 ‘혼란 속의 한국, 호랑이를 잃다.’라는
+												제목으로 실렸다. 김구 선생의 장례는 국민장으로 치러졌으며, 경교장
+												1층 동쪽 방에 빈소를 마련하고 시신을 보고 예를 올리게 하였는데
+												문상 행렬이 적십자 병원을 지나 서대문 사거리까지 이어졌다.</p>
+											<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="modal-img" style="background-image:url(images/gallery-inner-07.jpg)"></div>
+									<div class="modal-info">
+										<div class="contents-title">
+											<p class="title">KISS</p>
+											<p class="author">Alfred Eisenstaedt, 1945.</p>
+											<!-- <p class="subtitle">김구 선생의 암살 직후 경교장 뜰에 모여 애도하는 한국인들.</p> -->
+										</div>
+										<div class="contents-text">
+											<p>1945년 승리의 기쁨에 취한 선원이 흰색 유니폼을 입은 간호사의
+												허리를 뒤로 젖히면 열정적인 키스를 퍼붓고 있다. 그 사이 많은
+												사람들이 오랫동안 기다려온 일본 패전을 축하하기 위해 타임스
+												스퀘어로 모여들고 있다.</p>
+												<p class="small">© The Picture Collestion Inc. All Right reserved.</p>
+											</div>
+										</div>
+									</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							<div class="button-wrap">
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						</div>
+					</div>
+	      </div>
+	    </div>
+	  </div>
+
+
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+			$(".more").click(function() {
+			  $(".modalcontainer").fadeIn("slow");
+			  $(".modal").fadeIn("slow");
+			});
+
+			$(".close").click(function() {
+			  $(".modalcontainer").fadeOut("slow");
+			  $(".modal").fadeOut("slow");
+			});
+
+
+
+
+
+		</script>
+	</body>
+</html>

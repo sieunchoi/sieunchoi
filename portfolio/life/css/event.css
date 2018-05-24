@@ -1,0 +1,127 @@
+.container{
+  /* padding: 0 12%; */
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.movie-swiper-button-next,
+.movie-swiper-button-prev {
+    position: absolute;
+    top: unset;
+    bottom: 20px;
+    width: 110px;
+    height: 44px;
+    margin-top: -22px;
+    font-size: 13px;
+    line-height: 2rem;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.movie-swiper-button-next:hover,
+.movie-swiper-button-prev:hover{
+  color: #e90000;
+}
+.movie-button-next,.movie-button-prev{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.movie-button-next{
+  background-image: url(../images/arrow_right.png);
+  right: 25px;
+  left: auto;
+}
+.movie-button-prev{
+  background-image: url(../images/arrow_left.png);
+  left: unset;
+  right: 210px;
+}
+.swiper-button-disabled {
+    cursor: unset;
+    opacity: 0.4;
+}
+
+.movie-pagination.swiper-pagination-fraction{
+  width: initial;
+  position: absolute;
+  background: #fff;
+  left: unset;
+  right: 160px;
+  bottom: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px 20px;
+  letter-spacing: -0.1rem;
+  z-index: 10;
+}
+.movie span.swiper-pagination-current,
+.movie span.swiper-pagination-total{
+  font-size: 12px;
+}
+
+.program-left{
+  position: relative;
+  width: 40%;
+  padding: 15px;
+}
+.program-right{
+  position: relative;
+  width: 60%;
+  height: 70%;
+  padding: 15px;
+}
+.program-img{
+  background-image: url(../images/program_james.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bookmark{
+  position: absolute;
+  width: 58px;
+  height: 90px;
+  top: 0;
+  right: 20px;
+  background: url(../images/bookmark.png) left no-repeat;
+}
+.cont-title{padding-bottom: 1vw;}
+.cont-title p{font-size: 16px; color: #e90000; padding: 0;}
+.cont-title h1{margin: 0;}
+
+.cont-text{padding-bottom: 1vw; text-indent: 0;}
+.cont-info{padding: 1vw 0;}
+.info {text-align: left;}
