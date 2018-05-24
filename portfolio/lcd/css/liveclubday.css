@@ -382,8 +382,8 @@ table.timetable thead {}
 
 table.timetable thead th {
   width: 9%;
-  height: 60px;
-  padding: 10px;
+  height: 80px;
+  padding: 10px 10px 30px;
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
@@ -417,7 +417,7 @@ table.timetable:nth-child(3) tbody th span::after{ left: -10px; }
 table.timetable td {
   padding: 10px;
   vertical-align: middle;
-  border-bottom: 1px solid #fff6;
+  border-top: 1px solid #fff6;
   text-align: center;
   position: relative;
   z-index: 2;
