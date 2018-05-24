@@ -56,27 +56,18 @@
 
 
   <header>
-    <div class="autoplay">
-      <div class="main-slide" style="background-image:url(images/bg03.jpg);"></div>
-      <!-- <div class="main-slide" style="background-image:url(images/bg02.jpg);"></div> -->
-    </div>
-
-    <div class="header-content text-left">
+    <div class="header-content">
       <div class="container">
-
         <h1>홍대 앞 무경계 음악축제<br>라이브 클럽 데이 </h1>
         <p>2월 28일 펼쳐질 라이브 클럽 데이의 특별한 무대를 소개합니다<br>
           2018.02.28(FRI) 홍대 일대</p>
-          <div class="btn-box">
-
-        <a href="#" class="btn gradient">자세히 보기</a>
+        <div class="btn-box" id="scroll-down">
+          <button href="#" class="btn arrow">
+            <span>자세히보기</span>
+            <i class="icon icon-right-small"></i>
+          </button>
+        </div>
       </div>
-      <!-- <div class="scroll-btn">
-        <div class="scroll-arrow"></div>
-        <div class="scroll-arrow"></div>
-        <div class="scroll-arrow"></div>
-      </div> -->
-    </div>
     </div>
   </header>
 
@@ -667,19 +658,19 @@
       </div>
       <div class="col-md-6 col-xs-12 booking-right">
         <form class="booking-table">
-          <div class="tr" style="width:47%; float:left;">
+          <div class="tr">
             <span class="td">
               <input type="text" id="datepicker" placeholder="날짜선택">
               <label for="datepicker" class="i-datepicker"></label>
             </span>
           </div>
-          <div class="tr" style="width:47%; float:right;">
+          <div class="tr">
             <span class="td"><input type="text" placeholder="장소"></span>
           </div>
-          <div class="tr" style="width:47%; float:left;">
+          <div class="tr">
             <span class="td"><input type="text" placeholder="아티스트명"></span>
           </div>
-          <div class="tr" style="width:47%; float:right;">
+          <div class="tr">
             <span class="td"><input type="text" placeholder="연락받으실 전화번호"></span>
           </div>
           <div class="tr">
@@ -706,7 +697,6 @@
 
    <!-- footer -->
   <footer>
-    <div class="overlay"></div>
     <div class="container">
       <ul class="footer-link">
         <li><a href="#" style="color: #ff5858;">개인정보취급방침</a></li>
@@ -770,15 +760,6 @@
   })
 
 
-
-  $('.autoplay').slick({
-    autoplay: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  });
 
   $('.slick-items').slick({
   centerMode: true,

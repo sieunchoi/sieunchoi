@@ -144,49 +144,23 @@ nav.navbar-default .navbar-nav li a.active:hover {
 
 
 
-/**** NAV END ****/
-
-
 /**** HEADER ****/
 
 header {
   width: 100%;
-  min-height: 100%;
-  /* background-size: cover;
-  background: url(../images/bg03.jpg) center no-repeat; */
+  height: 100vh;
+  background-size: cover;
+  background: url(../images/bg03.jpg) center no-repeat;
+  background-attachment: fixed;
 }
-
-header:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-}
-
-.main-slide{
+header .header-content {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-}
-
-header{position: relative; width: 100%;}
-header .header-content {
-  position: absolute;
-  left: 0;
   top: 30%;
   z-index: 2;
-  width: 100%;
 }
 .header-content h1{
   color: #fff;
-  font-size: 45px;
-  line-height: 70px;
   font-weight: normal;
 }
 .header-content p{
@@ -195,127 +169,7 @@ header .header-content {
   color: #fff;
 }
 .header-content .btn-box{margin-top: 30px;}
-.header-content .btn{
-}
-.scroll-btn{
-  display: inline-block;
-  margin-top: 25px;
-}
-.scroll-arrow {
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  animation: arrow-wave 1s infinite;
-  animation-direction: alternate;
-}
-.scroll-arrow:nth-child(1) {
-    animation-delay: 0.1s;
-}
-.scroll-arrow:nth-child(2) {
-    animation-delay: 0.2s;
-}
-.scroll-arrow:nth-child(3) {
-    animation-delay: 0.3s;
-}
-@keyframes arrow-wave {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#scroll-down{
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  font-weight: bold;
-  text-align: center;
-  transform: translateX(-50%);
-  color: #dedee2;
-  opacity: 0.8;
-}
-#scroll-down img{width: 30px; margin-left: 10px; }
-#scroll-down:hover{opacity: 1;}
-
-.arrow-wave {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 0;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.mouse{
-  width: 30px;
-  height: 48px;
-  border-radius: 15px;
-  border: 2px solid #fff;
-}
-.arrow-wave span {
-  display: block;
-  position: relative;
-  height: 10px;
-  width: 16px;
-  opacity: 0.2;
-  margin: auto;
-}
-
-.arrow-wave span::before,
-.arrow-wave span::after {
-  display: block;
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 12px;
-  background-color: #fff;
-}
-
-.arrow-wave span::before {
-  top: -2px;
-  left: 0;
-  transform-origin: left center;
-  transform: rotate(45deg);
-}
-
-.arrow-wave span::after {
-  top: -2px;
-  right: 0;
-  transform-origin: right center;
-  transform: rotate(-45deg);
-}
-
-.arrow-wave span:nth-child(1n) {
-  animation: animate-arrow-wave 2s infinite;
-  animation-delay: .25s;
-}
-.arrow-wave span:nth-child(2n) {
-  animation: animate-arrow-wave 2s infinite;
-  animation-delay: .50s;
-}
-
-.arrow-wave span:nth-child(3n) {
-  animation: animate-arrow-wave 2s infinite;
-  animation-delay: .75s;
-}
-
-@keyframes animate-arrow-wave {
-  0%   { opacity: 0.2; }
-  25%  { opacity: 0.2; }
-  50%  { opacity: 0.2; }
-  75%  { opacity: 1.0; }
-  100% { opacity: 0.2; }
-}
-
-
+.header-content .btn{}
 
 
 /* 어바웃 */
@@ -985,17 +839,10 @@ img.event-icon {
   background-size: cover;
   background-attachment: fixed;
   height: auto;
+  padding: 50px 0;
 }
-#booking::before{
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 680px;
-  background: linear-gradient(to bottom right, #ff4a5d, #3452ff);
-  opacity: 0.7;
-}
-#booking .container{
-}
+
+#booking .container{}
 .booking-left,.booking-right{
   position: relative;
 }
@@ -1017,7 +864,7 @@ form.booking-table{
   width: 100%; height: 100%;
   top: 0; left: 0;
   font-size: 14px;
-  padding: 3vw;
+  padding: 2vw 3vw;
 }
 
 .tr{
@@ -1027,6 +874,9 @@ form.booking-table{
   float: left;
   padding: 20px 0 5px;
 }
+form.booking-table .tr:nth-child(odd) { width: 47%; float: left;}
+form.booking-table .tr:nth-child(even) { width: 47%; float: right;}
+form.booking-table .tr:nth-child(5) { width: 100%;}
 .tr.textarea {
   width: 100%;
   margin-bottom: 30px;
@@ -1206,13 +1056,13 @@ footer{
 footer .container{
   padding: 30px 15px;
 }
-.rights{ float: left; }
-.rights small{color: #fff; opacity: 0.7;}
-.footer-link{position: relative; float: right; margin: 0; z-index: 2;}
+.footer-link{position: relative; float: left; margin: 0; z-index: 2;}
 .footer-link li{float: left; padding: 0 10px; font-size: 14px;}
 .footer-link li a{color:#dedee2 }
 .footer-link li a:hover{color: #fff; position: relative;}
-.social{position: relative; text-align: center; z-index: 1;}
+.rights{ float: right;}
+.rights small{color: #fff; opacity: 0.7;}
+.social{position: absolute; left: 50%; transform: translateX(-50%);}
 .social span{font-size: 13px;}
 .social a img{height: 20px;}
 .social a{opacity: 0.8; padding: 10px;}
@@ -1222,35 +1072,31 @@ footer .container{
 @media (max-width:767px) {
   nav.navbar-default {height: 60px;}
   nav.navbar-default .navbar-brand{
-  left: 50%;
-  transform: translate(-50%);
-  padding: 12px 15px;
-  height: 60px;
-}
-nav.navbar-default .navbar-brand img{ height: 34px;}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{border: 0;}
-#myNavbar{background: #222;}
-  header{height: 60px;}
+    padding: 15px 20px;
+    height: 60px;
+    z-index: 5;
+  }
+  nav.navbar-default .navbar-brand img{ height: 30px;}
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{border: 0;}
+  #myNavbar{ position: absolute; top: 0; background: #222;}
+  nav.navbar-default .navbar-nav { margin: 60px 0;}
 
   .logo h1{ padding: 15px 0;}
   .logo h1 img{height: 30px;}
   nav{
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: 0;
+    right: -70%;
     width: 100%;
     height: 100%;
     background: #000000cf;
     transition: all 0.5s;
   }
-  #btn-menu:checked ~ nav{top:0;}
-
+  #btn-menu:checked ~ nav{right:0;}
 
   nav ul{
-    top: 50%;
     display: inline-block;
     position: relative;
-    transform: translateY(-50%);
   }
   nav ul li{
     width: 100%;
@@ -1260,39 +1106,58 @@ nav.navbar-default .navbar-brand img{ height: 34px;}
     line-height: 36px;
     font-weight: 500;
   }
-  .util{}
+  .util{ position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
 
-  .header-content h1{ font-size: 9vw; line-height: 60px;}
-  .header-content p{ font-size: 15px; line-height: 30px;}
-  .about-img{height: 500px;}
-  .about-img img{height: 500px;}
+  header {}
+  .header-content { text-align: center;}
+  .header-content p{ font-size: 15px; line-height: 1.8; }
 
-.banner{ height: 400px;}
-    .banner-title p{font-size: 120px;}
-    .banner>.contents dl{padding-top: 10px;}
+  section{ padding: 30px 0;}
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  .section-title.text-left { text-align: center;}
 
-    #club{padding-bottom: 300px;}
-.map-img{height: 300px;}
-    .map-img .contents{ width: 100%; }
+  .about-img, .about-contents{height: auto;}
+  .about-img img, .text-wrap{ top: auto; transform: none;}
+  .text-wrap>.section-title.text-left { margin: 30px 0; }
 
-    table.timetable td{ font-size: 13px; }
+  .banner{ height: 400px;}
+  .banner-title p{font-size: 120px; padding-right: 0; }
+  .banner>.contents dl{ text-align: center; padding-top: 10px;}
 
-.artist-slide.slick-slide {height: 420px;}
+  #club{padding-bottom: 300px;}
+  .map-img{height: 300px;}
+  .map-img .contents{ width: 100%; }
+
+  .event-right ul [class*="col-"] { padding: 15px 0; }
+
+  table.timetable td{ font-size: 13px; }
+
+.artist-slide.slick-slide {height: 360px;}
+.artist-title { width: 100%; padding: 20px;}
 .artist-title p { font-size: 14px; }
 .artist-title h1 { font-size: 28px;}
+
+form.booking-table { padding: 0; }
+form.booking-table .tr:nth-child(1) { width: 100%;}
+form.booking-table .tr:nth-child(2) { width: 47%; float: left;}
+form.booking-table .tr:nth-child(3) { width: 47%; float: right;}
+form.booking-table .tr:nth-child(4) { width: 100%;}
 
 .footer-link{
   width: 100%;
   float: initial;
   text-align: center;
   margin-bottom: 20px;
-}
-.footer-link li { display: inline-block; float: initial;}
-.social{ margin-bottom: 20px;}
-.rights{ float: initial; text-align: center;}
+  }
+  .footer-link li { display: inline-block; float: initial;}
+  .social{ position: relative; text-align: center; margin-bottom: 20px;}
+  .rights{ float: initial; text-align: center;}
 }
 /* 테블릿이상 */
 @media (min-width: 768px) and (max-width: 992px){
+  .header-content { text-align: center;}
+
 
   button[class*="btn-club-"]{}
 

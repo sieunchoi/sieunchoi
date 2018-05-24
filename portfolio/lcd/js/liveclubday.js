@@ -57,8 +57,8 @@ $('#id, #password').on('focus',function(){
 
   $('#scroll-down').click(function(){
     $('html, body').stop().animate({
-      scrollTop:$('.media').offset().top+80
-    },1500,'easeInQuart');
+      scrollTop:$('#information').offset().top-60
+    },1000);
   })
 
   // $(window).scroll(function(){
