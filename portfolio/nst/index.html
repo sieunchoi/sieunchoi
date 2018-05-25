@@ -124,10 +124,10 @@
         <div id="particle-canvas" style="position:absolute; top:0;"></div>
         <div class="swiper-container main-slide">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(images/main_01.jpg)">
+            <div class="swiper-slide" style="background-image:url(images/main-03.jpg)">
               <div class="overlay"></div>
             </div>
-            <div class="swiper-slide" style="background-image:url(images/main-02.jpg)">
+            <div class="swiper-slide" style="background-image:url(images/main-03.jpg)">
               <div class="overlay"></div>
             </div>
           </div>
@@ -136,8 +136,9 @@
       <div id="main-contents">
         <div class="main-title">
           <div class="container">
-            <h1>NST<br>the First Mover</h1>
-            <p>국가과학기술연구회는 과학기술분야 25개 정부출연연구기관이<br>'퍼스트무버(First Mover)'로 성장할 수 있도록 지원하고있습니다.</p>
+            <h1>한국과학기술,<br>세계속에서 함께 성장하고 있습니다.</h1>
+            <span class="line_center"></span>
+            <p>국가과학기술연구회는 과학기술분야 25개<br>정부출연연구기관이 과학기술 혁신을 주도할 수 있도록<br>더욱 빛나는 길잡이 별이 되어 지원하겠습니다.<p>
             <div class="btn-box">
               <a href="#" class="btn more">자세히보기</a>
             </div>
@@ -807,12 +808,12 @@
 
         var canvasDiv = document.getElementById('particle-canvas');
         var options = {
-          particleColor: '#eee',
+          particleColor: '#d6d6d6',
           background: '#000',
 
           interactive: false,
           speed: 'slow',
-          density: 'low'
+          density: 'middle'
         };
         var particleCanvas = new ParticleNetwork(canvasDiv, options);
         //# sourceURL=pen.js
