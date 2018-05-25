@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>playlist</title>
+    <!-- 디바이스별 크기 맞춤 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/playlist.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(function(){
+        // 재생목록 버튼을 눌렀을 때 화면 회전처리
+        // 앞면안보이게 뒷면보이게
+        $('.btn-list').click(function(){
+          $('#front').addClass('back');
+          $('#back').removeClass('back');
+          //1초뒤에 .list의 overflow속성 값 변경하기
+          setTimeout(function(){
+            $('.list').css('overflow-y','auto');
+          },1000);
+
+        })
+
+        // 뒷면에서 뒤로가기 누르면 다시 회전처리
+        $('#back .btn-back').click(function(){
+          $('#back').addClass('back');
+          $('#front').removeClass('back');
+          //overflow속성 다시 원상복귀
+          $('.list').css('overflow-y','hidden');
+        })
+
+        // 좋아요 누르면 색상변경
+        $('.btn-like').click(function(){
+          $(this).toggleClass('on');
+        })
+
+      })
+    </script>
+  </head>
+  <body>
+    <div class="music-player">
+
+      <div id="front" class="playlist">
+        <!-- <img src="images/phone-top.png" alt=""> -->
+        <div class="top">
+          <h1>Now Playing</h1>
+          <button class="btn-list">
+            <i class="material-icons">queue_music</i>
+            <span class="skip">재생목록</span>
+          </button>
+          <button class="btn-search">
+            <i class="material-icons">search</i>
+            <span class="skip">검색</span>
+          </button>
+        </div>
+        <!-- top end -->
+
+        <div class="now-play">
+          <div class="album-img">
+            <img src="images/album-1.jpg" alt="앨범이미지" class="img-circle">
+          </div>
+
+          <div class="box">
+            <p><b>Radiohead</b>
+            Thinking about you</p>
+            <div class="volume">
+              <button id="btn-volume"><i class="material-icons">volume_up</i></button>
+              <div class="volume-progress">
+                <div></div>
+              </div>
+            </div>
+
+            <button class="btn-like">
+              <span class="skip">좋아요</span>
+            </button>
+          </div>
+        </div>
+        <!-- now-play end -->
+
+        <div class="controls">
+          <div class="progressbar">
+            <div class="bar-bg">
+              <span class="bar"></span>
+            </div>
+            <span class="now">0:40</span>
+            <span id="time">3:40</span>
+          </div>
+          <div class="btn-area">
+            <button id="btn-loop"><i class="material-icons">&#xE040;</i><span class="skip">반복</span></button>
+            <button id="btn-prev"><i class="material-icons">&#xE020;</i><span class="skip">이전</span></button>
+            <button id="btn-play"><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <button id="btn-next"><i class="material-icons">&#xE01F;</i><span class="skip">다음</span></button>
+            <button id="btn-shuffle"><i class="material-icons">&#xE043;</i><span class="skip">랜덤</span></button>
+          </div>
+        </div>
+        <!-- control end -->
+      </div>
+      <!-- front end -->
+
+      <div id="back" class="playlist back">
+        <div class="top">
+          <h1>Playlist</h1>
+          <button class="btn-back">
+            <i class="material-icons">&#xE314;</i>
+            <span class="skip">뒤로가기</span>
+          </button>
+        </div>
+        <!-- top end -->
+
+        <!-- ul>li*10>img[src=images/album-$.jpg][alt=앨범이미지]+(dl>dt+dd)+button -->
+        <ul id="play-list">
+          <li class="active">
+            <img src="images/album-1.jpg" alt="앨범이미지">
+            <!-- <i class="material-icons">&#xE037;</i><span class="skip">재생</span> -->
+            <button class="eq_outer">
+              <div class="eq_element">
+                <span class="second_line"></span>
+                <span class="third_line"></span>
+                <span class="fourth_line"></span>
+                <span class="fifth_line"></span>
+              </div>
+            </button>
+            <dl>
+              <dt>Replica</dt>
+              <dd>The XX / I See You</dd>
+            </dl>
+            <span class="list-time">4:09</dd>
+            </li>
+          <li>
+            <img src="images/album-2.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Wonderwall</dt>
+              <dd>Oasis / (What's The Story) Morning Glory</dd>
+            </dl>
+            <span class="list-time">4:20</dd>
+          </li>
+          <li>
+            <img src="images/album-3.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>The Scientist</dt>
+              <dd>Coldplay / A Rush Of Blood To The Head</dd>
+            </dl>
+            <span class="list-time">5:09</dd>
+          </li>
+          <li>
+            <img src="images/album-4.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Havana (feat. Yonug Thug)</dt>
+              <dd>Camila Cabello / Camila</dd>
+            </dl>
+            <span class="list-time">3:37</dd>
+          </li>
+          <li>
+            <img src="images/album-5.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>I Want You Back</dt>
+              <dd>Jackson 5 / This Is The Sound Of...Jackson 5</dd>
+            </dl>
+            <span class="list-time">2:57</dd>
+          </li>
+          <li>
+            <img src="images/album-6.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>L.S.F (Lost Souls Forever)</dt>
+              <dd>Kasabian / Kasabian</dd>
+            </dl>
+            <span class="list-time">3:17</dd>
+          </li>
+          <!-- <li>
+            <img src="images/album-7.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Thinking About You</dt>
+              <dd>Radiohead / Pablo Honey</dd>
+            </dl>
+            <span class="list-time">2:41</dd>
+          </li>
+          <li>
+            <img src="images/album-8.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Radiohead - Thinking about you</dt>
+              <dd>Pablo Honey</dd>
+            </dl>
+            <span class="list-time">3:40</dd>
+          </li>
+          <li>
+            <img src="images/album-9.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Radiohead - Thinking about you</dt>
+              <dd>Pablo Honey</dd>
+            </dl>
+            <span class="list-time">3:40</dd>
+          </li>
+          <li>
+            <img src="images/album-10.jpg" alt="앨범이미지">
+            <button><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <dl>
+              <dt>Radiohead - Thinking about you</dt>
+              <dd>Pablo Honey</dd>
+            </dl>
+            <span class="list-time">3:40</dd>
+          </li> -->
+        </ul>
+        <div class="controls">
+          <div class="progressbar">
+            <div class="bar-bg">
+              <span class="bar"></span>
+            </div>
+            <span class="now">0:40</span>
+            <span id="time">3:40</span>
+          </div>
+          <div class="btn-area">
+            <button id="btn-loop"><i class="material-icons">&#xE040;</i><span class="skip">반복</span></button>
+            <button id="btn-prev"><i class="material-icons">&#xE020;</i><span class="skip">이전</span></button>
+            <button id="btn-play"><i class="material-icons">&#xE037;</i><span class="skip">재생</span></button>
+            <button id="btn-next"><i class="material-icons">&#xE01F;</i><span class="skip">다음</span></button>
+            <button id="btn-shuffle"><i class="material-icons">&#xE043;</i><span class="skip">랜덤</span></button>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <!-- back end -->
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
