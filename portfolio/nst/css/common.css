@@ -290,7 +290,7 @@ header nav .gnb-nav{position: absolute; top: 120px; left: 0; width: 100%; z-inde
 header nav .gnb-nav > li{ position: relative; float: left; width: 16.66%;}
 header nav .gnb-nav > li > a{
   display: block;  position: relative; font-size: 18px; font-weight: bold;
-  line-height: 60px; text-align: center;}
+  line-height: 53px; text-align: center;}
 header nav .gnb-nav > li.active > a,
 header nav .gnb-nav > li:hover > a{}
 /* 빨간 밑줄 */
@@ -384,8 +384,9 @@ section.sub_main{
   font-size: 26px;
 }
 .section_title p{
+  max-width: 500px;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin: 10px auto 40px;
 }
 .section_title_icon{
   height: 30px;
@@ -658,7 +659,7 @@ ul.footer_menu li a:hover{
   }
   header nav .gnb-nav > li{ width: 100%; float: none; padding: 0 25px; }
   header nav .gnb-nav > li > a{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0;
     text-align: left;
