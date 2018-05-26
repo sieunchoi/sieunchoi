@@ -308,7 +308,7 @@ header nav .gnb-nav li ul li a{font-size: 14px; line-height: 30px; transition: a
 header nav .gnb-nav li ul li a.active,
 header nav .gnb-nav li ul li a:hover{ color: #079bd9; }
 
-.wrap{margin-top: 180px;}
+.wrap{margin-top: 65px;}
 
 /* 서브 페이지 */
 section.sub_main{
@@ -375,7 +375,7 @@ section.sub_main{
 }
 
 .section_title{
-  padding-top: 40px;
+  padding: 40px 20px 0;
   text-align: center;
 }
 .section_title h1{

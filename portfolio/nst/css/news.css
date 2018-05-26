@@ -81,9 +81,12 @@ section.sub_main{
 
 
 @media (max-width: 767px){
+  .nav_left ul li { width: 50%;}
+  .sub_cont { margin-top: 40px;}
 
   .board-list ul li .cell{padding: 0 15px;}
   .board-list figure figcaption{padding: 0;}
   .text-wrap{padding: 15px 0 0;}
   .text-wrap .date{bottom: 0;}
+
 }
