@@ -51,32 +51,42 @@
     </label>
     <!-- 네비게이션 -->
     <nav>
-        <ul class="gnb">
-          <li><a href="#" id="home"><span>HOME</span></a></li>
-          <li><a href="#" id="about"><span>ABOUT</span></a></li>
-          <li><a href="#" id="services"><span>SERVICES</span></a></li>
-          <li><a href="#" id="portfolio"><span>PORTFOLIO</span></a></li>
-          <li><a href="#" id="contact"><span>CONTACT</span></a></li>
-        </ul>
-        <div class="footer">
-          <p>© 2018 Sieun.<br>All Rights Reserved.</p>
-        </div>
-      </nav>
+      <div class="menu">
+        <a class="menu-item" href="#" id="home">
+          <span class="menu-item-name">Home</span>
+        </a>
+        <a class="menu-item" href="#" id="profile">
+          <span class="menu-item-name">Profile</span>
+        </a>
+        <a class="menu-item" href="#" id="portfolio">
+          <span class="menu-item-name">Protfolio</span>
+        </a>
+        <a class="menu-item" href="#" id="services">
+          <span class="menu-item-name">Services</span>
+        </a>
+        <a class="menu-item" href="#" id="contact">
+          <span class="menu-item-name">Contact</span>
+        </a>
+      </div>
+      <div class="footer">
+        <p>© 2018 Sieun.<br>All Rights Reserved.</p>
+      </div>
+    </nav>
     <!-- 오른쪽 아이콘 -->
     <div class="side-icons">
       <ul class="social">
         <li>
-          <a href="https://www.facebook.com/sieun.choi.58" target="_blank" class="fab fa-facebook-f">
+          <a href="#" class="fab fa-facebook-f">
             <span class="icon-label">FACEBOOK</span>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/choisieunn/" target="_blank" class="fab fa-instagram">
+          <a href="#" class="fab fa-instagram">
             <span class="icon-label">INSTAGRAM</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/sieunchoi" target="_blank" class="fab fa-github">
+          <a href="#" class="fab fa-github">
             <span class="icon-label">GITHUB</span>
           </a>
         </li>
@@ -104,7 +114,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="profile">
         <div class="wrap">
           <div class="section-title">
             <h2>profile</h2>
@@ -181,14 +191,93 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="portfolio">
         <div class="wrap">
-          <div class="col-md-12 col-sm-12 col-xs-12 skills">
-            <div class="slide-left profile-title">
-              <img src="images/about-04.png" alt="">
-              <h3>SKILL LIST</h3>
+          <div class="section-title">
+            <h2>PROTFOLIO</h2>
+          </div>
+          <div id="works">
+            <div class="category">
+              <span class="filter-label">Filter by : </span>
+              <ul class="filter">
+                <li class="active" data-sort-value=""><a href="#">All</a></li>
+                <li data-sort-value="[data-category=Responsive]"><a href="#">Responsive</a></li>
+                <li data-sort-value="[data-category=DESKTOP]"><a href="#">DESKTOP</a></li>
+                <li data-sort-value="[data-category=Mobile]"><a href="#">Mobile</a></li>
+                <li data-sort-value="[data-category=UI/UX]"><a href="#">UI/UX</a></li>
+              </ul>
             </div>
 
+            <!-- works -->
+            <div class="grid" style="position: relative; height: 631.469px;">
+              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="Responsive" style="position: absolute; left: 0px; top: 0px;">
+                <figure class="effect-julia">
+                  <img src="images/main-01.jpg" alt="img22">
+                  <figcaption>
+                    <span>RESPONSIVE</span>
+                    <h2>국립과학기술연구회(NST)</h2>
+                    <div>
+                      <p>홈페이지 리뉴얼</p>
+                      <p>메인페이지 1, 서브페이지 3</p>
+                      <p>자세히보기</p>
+                    </div>
+                    <a href="#"></a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="Mobile" style="position: absolute; left: 292px; top: 0px;">
+                <figure class="effect-julia">
+                  <img src="images/main01.jpg" alt="img22">
+                  <figcaption>
+                    <h2>Passionate <span>Julia</span></h2>
+                    <div>
+                      <p>Julia dances in the deep dark</p>
+                      <p>She loves the smell of the ocean</p>
+                      <p>And dives into the morning light</p>
+                    </div>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="UI/UX" style="position: absolute; left: 585px; top: 0px;">
+                <figure class="effect-julia">
+                  <img src="images/bg03.jpg" alt="img22">
+                  <figcaption>
+                    <h2>Passionate <span>Julia</span></h2>
+                    <div>
+                      <p>Julia dances in the deep dark</p>
+                      <p>She loves the smell of the ocean</p>
+                      <p>And dives into the morning light</p>
+                    </div>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="DESKTOP" style="position: absolute; left: 0px; top: 314px;">
+                <figure class="effect-julia">
+                  <img src="images/music_player.png" alt="img22">
+                  <figcaption>
+                    <h2>Passionate <span>Julia</span></h2>
+                    <div>
+                      <p>Julia dances in the deep dark</p>
+                      <p>She loves the smell of the ocean</p>
+                      <p>And dives into the morning light</p>
+                    </div>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="wrap">
+          <div class="col-md-12 col-sm-12 col-xs-12 services">
+            <div class="section-title">
+              <h2>services</h2>
+            </div>
             <ul class="chart-container">
               <li class="col-md-4 col-sm-6 col-xs-12 pr-chart-ctrl">
                 <div class="pr-chart" data-percent="25"><i></i></div>
@@ -211,95 +300,7 @@
                   <p>프로그램의 전반적인 기능을 이해하고 사용할 수 있으며 원하는 디자인을 자유자재로 구현할 수 있습니다.</p>
                 </div>
               </li>
-              <!-- <li class="col-md-3 col-sm-6 col-xs-12 pr-chart-ctrl">
-                <div class="pr-chart" data-percent="100"><i></i></div>
-                <div class="chart-info">
-                  <h3>Illustrator</h3>
-                  <p>일러스트레이터 프로그램을 사용하여 캐릭터 디자인, 로고, 명함 등을 제작할 수 있습니다.</p>
-                </div>
-              </li> -->
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio">
-        <div class="wrap">
-          <div class="section-title">
-            <h2>PROTFOLIO</h2>
-          </div>
-          <div id="works">
-            <div class="category">
-              <span class="filter-label">Filter by : </span>
-              <ul class="filter">
-                <li class="active" data-sort-value=""><a href="#">All</a></li>
-                <li data-sort-value="[data-category=Responsive]"><a href="#">Responsive</a></li>
-                <li data-sort-value="[data-category=DESKTOP]"><a href="#">DESKTOP</a></li>
-                <li data-sort-value="[data-category=Mobile]"><a href="#">Mobile</a></li>
-                <li data-sort-value="[data-category=UI/UX]"><a href="#">UI/UX</a></li>
-              </ul>
-            </div>
-
-            <!-- works -->
-            <div class="grid" style="position: relative; height: 631.469px;">
-              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="Responsive" style="position: absolute; left: 0px; top: 0px;">
-                <figure class="effect-julia">
-      						<img src="images/main-01.jpg" alt="img22">
-      						<figcaption>
-                    <span>RESPONSIVE</span>
-                    <h2>국립과학기술연구회(NST)</h2>
-      							<div>
-      								<p>홈페이지 리뉴얼</p>
-                      <p>메인페이지 1, 서브페이지 3</p>
-                      <p>자세히보기</p>
-      							</div>
-      							<a href="#"></a>
-      						</figcaption>
-      					</figure>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="Mobile" style="position: absolute; left: 292px; top: 0px;">
-                <figure class="effect-julia">
-      						<img src="images/main01.jpg" alt="img22">
-      						<figcaption>
-      							<h2>Passionate <span>Julia</span></h2>
-      							<div>
-      								<p>Julia dances in the deep dark</p>
-      								<p>She loves the smell of the ocean</p>
-      								<p>And dives into the morning light</p>
-      							</div>
-      							<a href="#">View more</a>
-      						</figcaption>
-      					</figure>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="UI/UX" style="position: absolute; left: 585px; top: 0px;">
-                <figure class="effect-julia">
-      						<img src="images/bg03.jpg" alt="img22">
-      						<figcaption>
-      							<h2>Passionate <span>Julia</span></h2>
-      							<div>
-      								<p>Julia dances in the deep dark</p>
-      								<p>She loves the smell of the ocean</p>
-      								<p>And dives into the morning light</p>
-      							</div>
-      							<a href="#">View more</a>
-      						</figcaption>
-      					</figure>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 item" data-category="DESKTOP" style="position: absolute; left: 0px; top: 314px;">
-                <figure class="effect-julia">
-      						<img src="images/music_player.png" alt="img22">
-      						<figcaption>
-      							<h2>Passionate <span>Julia</span></h2>
-      							<div>
-      								<p>Julia dances in the deep dark</p>
-      								<p>She loves the smell of the ocean</p>
-      								<p>And dives into the morning light</p>
-      							</div>
-      							<a href="#">View more</a>
-      						</figcaption>
-      					</figure>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -323,8 +324,18 @@
             </li>
           </ul>
           <!-- contact from -->
-          <script src="//www.powr.io/powr.js?external-type=html"></script>
-           <div class="powr-contact-form" id="c9f6d5e7_1520835722"></div>
+          <form class="form" id="form" method="post" action="contact.php">
+            <input type="text" class="name" name="name"  placeholder="NAME" required/>
+            <input type="text" class="phone" name="phone" placeholder="PHONE"/>
+            <input type="text" class="email" name="email" placeholder="EMAIL" required/>
+            <textarea class="message" name="message" placeholder="MESSAGE" rows="8" ></textarea>
+            <button type="submit" class="sending-btn"  id="submit" value="Send Message">
+          </form>
+          <span class="sending">
+              SEND MESSAGE
+          </span><!-- end .sending -->
+          <div class="mess center">
+          </div><!-- end .mess .center -->
         </div>
       </div>
 
