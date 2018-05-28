@@ -548,47 +548,6 @@ ul.chart-container .pr-chart-ctrl .pr-chart i {
 .contact-info ul li i { margin-right: 10px; }
 
 .contact-form{ max-width: 760px; margin: auto; padding: 20px;}
-.form{position: relative; width: 100%;}
-.form input{
-  width: 100%;
-  line-height: 50px;
-  display: block;
-  outline: none;
-  border: 0;
-  border-bottom: 1px solid #dbdbdb;
-  padding: 0 10px;
-  margin-bottom: 20px;
-  transition: all .5s;
-  background: transparent;
-}
-.form input:focus, .message:focus {
-  border-bottom: 1px solid linear-gradient(to right, #f87db4, #ffad96);
-}
-.message{
-  display: block;
-  width: 100%;
-  margin: 10px 5px;
-  padding: 10px;
-  outline: none;
-  border: 0;
-  border-bottom: 1px solid #dbdbdb;
-  background: transparent;
-}
-.sending-btn{
-  position: relative;
-  width: 100%;
-  line-height: 30px;
-  padding: 10px 30px;
-  font-size: 12px;
-  color: #fff;
-  border: 0;
-  margin: 20px 0;
-  background: linear-gradient(to right, #f87db4, #ffad96);
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.sending{letter-spacing: 0.3em;}
-.sending-btn:hover{background: #6f6f6f; color: #fff;}
 
 
 footer { text-align: center;  background: #fffbf9;}
