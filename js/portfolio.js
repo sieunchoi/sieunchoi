@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(window).fadeThis({
-    speed: 1000,
+    speed: 800,
   });
 
 
@@ -13,11 +13,14 @@ $(document).ready(function() {
   })
 
 
-  $('#bottom').click(function(){
+
+
+  $('.btn-down').click(function(){
     $('html, body').stop().animate({
-      scrollTop:'+=969'
-    },1000);
+      scrollTop:$('#scroll-about').offset().top-50
+    },1000,);
   })
+
 
 
 
