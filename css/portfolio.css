@@ -1,34 +1,44 @@
 @charset "UTF-8";
 
 /* reset */
-h1.logo { z-index: 2;}
-
 .section-title { text-align: left;}
 
 .sub-header{
   width: 100%;
-  top: 0;
-  height: 80vh;
+  margin-top: 88px;
+  height: 60vh;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  padding: 0;
 }
 .sub-header .center {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
 }
-.sub-header-title { padding: 0 6vw;}
+.sub-header img {
+  position: absolute;
+  top: 0; right: 0;
+  height: 100%;
+  z-index: 1;
+}
+.sub-header-title {
+  padding: 0 6vw;
+  z-index: 2;
+}
 .sub-header-title p {
-  font-size: 1.7vw;
+  font-size: 1vw;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 16px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
 }
 .sub-header-title h3 {
+  display: inline-block;
   font-size: 4vw;
   font-weight: normal;
   line-height: 1.1;
@@ -70,8 +80,50 @@ h1.logo { z-index: 2;}
   float: left;
   margin-right: 10px;
 }
-.overview .btn-box{ width: 100%; text-align: right;}
-.overview .btn-box .btn { margin-right: 20px; }
+.overview-btn{
+  width: 100%;
+  text-align: right;
+  padding: 0 20px;
+}
+.overview-btn .menu {
+  position: relative;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+}
+.overview-btn .menu .menu-item {
+  float: none;
+  display: inline-block;
+
+}
+.overview-btn .menu .menu-item-name {
+  font-size: 13px;
+}
+.overview-btn .menu .menu-item-name i { padding-left: 5px; font-size: 12px;}
+
+.btn-arrow i {
+  font-size: 11px;
+  background: #fb94a5;
+  color: #fff;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -14px;
+    height: 25px;
+    line-height: 25px;
+    width: 24px;
+    border-radius: 50px;
+    transition: all 0.33s cubic-bezier(0.12,0.75,0.4,1);
+    -webkit-transition: all 0.33s cubic-bezier(0.12,0.75,0.4,1);
+    box-shadow: 0px 9px 20px #ffdbdb;
+    transition: all .3s;
+}
 
 
 
