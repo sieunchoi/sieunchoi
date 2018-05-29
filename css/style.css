@@ -110,13 +110,16 @@ nav{
 	transition: transform 0.5s;
 	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
+.menu .menu-item.disabled {
+  opacity: .45;
+  cursor: auto;
+  pointer-events: none;
+}
 .menu .menu-item-label {
-	font-size: 14px;
+	font-size: 13px;
   padding: 0 0.35em;
 	letter-spacing: 0.05em;
-	transform: translate3d(0,0,0);
 	transition: transform 0.5s, color 0.5s;
-	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 .menu .menu-item .menu-item-name::before,
 .menu .menu-item .menu-item-label::before {
@@ -129,14 +132,7 @@ nav{
 .menu .menu-item:focus {
   color: #ff1053;
 }
-.menu .menu-item:hover .menu-item-name::before,
-.menu .menu-item:focus .menu-item-name::before,{
-	transform: scale3d(1,1,1);
-}
-.menu .menu-item:hover .menu-item-label,
-.menu .menu-item:focus .menu-item-label {
-	transform: translate3d(0.5em,0,0);
-}
+
 
 
 .footer{
