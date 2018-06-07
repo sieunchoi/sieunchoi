@@ -4,7 +4,7 @@ $(document).ready(function() {
   });
 
 
-  $('#home, #profile, #portfolio, #services, #contact').click(function(){
+  $('#home, #about, #portfolio, #services, #contact').click(function(){
     var elName=$(this).attr('id');
     console.log('선택한버튼의 아이디이름값',elName);
     $('html, body').stop().animate({
