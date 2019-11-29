@@ -235,9 +235,12 @@ strong {
   font-weight: 700;
 }
 .main-content p {
-  font-size: 17px;
+  font-size: 13px;
   margin: 0 0 30px 0;
   line-height: 1.8;
+}
+.main-content p span{
+  font-weight: bold;
 }
 .btn, .btn-down {
   line-height: 45px;
