@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | STYLE71</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fadethis.min.js"></script>
+    <script src="js/portfolio.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="center">
+        <!-- 로고 -->
+        <h1 class="logo"><a href="https://sieunchoi.github.io/">SIEUN CHOI</a></h1>
+        <!-- 모바일환경에서 보이는 토글메뉴버튼 -->
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- 네비게이션 -->
+        <nav>
+          <div class="menu">
+            <a class="menu-item disabled" href="#">
+              <span class="menu-item-name">Prev</span>
+              <span class="menu-item-label"></span>
+            </a>
+            <a class="menu-item" href="https://sieunchoi.github.io/sub-okicar.html">
+              <span class="menu-item-name">Next</span>
+              <span class="menu-item-label">오키카</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 사이드 아이콘 -->
+    <div class="side-icons">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/sieun.choi.58" class="fab fa-facebook-f"></a>
+          <span>FACEBOOK</span>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/choisieunn/" class="fab fa-instagram"></a>
+          <span>INSTAGRAM</span>
+        </li>
+        <li>
+          <a href="https://github.com/sieunchoi" class="fab fa-github"></a>
+          <span>GITHUB</span>
+        </li>
+        <li>
+          <a href="#" class="btn-top">TOP</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="overview">
+      <div class="center">
+      <!--  <div class="col-md-6 col-sm-6 col-xs-12 sub-header-title">
+          <p style="color:#717171;">Web Design /</p>
+          <h3 style="background:#00000069; padding:5px 20px 0;">오키카</h3><br>
+          <h3 style="background:#00000069; padding:5px 20px 0;">렌터카 이용안내 이미지 디자인</h3>
+        </div> -->
+        <div class="col-md-6 col-sm-6 col-xs-12 overview-info">
+          <dl class="col-md-6 col-sm-6 col-xs-12">
+            <dt>TYPE</dt>
+            <dd>Web Design</dd>
+          </dl>
+          <dl class="col-md-6 col-sm-6 col-xs-12">
+            <dt>ROLE</dt>
+            <dd>디자인</dd>
+          </dl>
+          <dl class="col-md-6 col-sm-6 col-xs-12">
+            <dt>PERIOD</dt>
+            <dd>2019.07</dd>
+          </dl>
+          <dl class="col-md-6 col-sm-6 col-xs-12">
+            <dt>참여도</dt>
+            <dd>100%</dd>
+          </dl>
+          <dl class="col-md-12 col-sm-12 col-xs-12">
+            <dt>OVERVIEW</dt>
+            <dd>
+              STYLE71 제품 상세페이지 디자인입니다.
+            </dd>
+          </dl>
+          <div class="col-md-12 col-sm-12 col-xs-12 overview-btn">
+            <a class="more-link" href="http://www.style71.co.kr/" target="_blank">
+              <em>Web Site</em>
+              <span class="arrow">
+                <span class="line"></span>
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      </div>
+    </section>
+
+    <section class="screenshot">
+      <div class="center">
+        <img src="images/style71-01.jpg" alt="">
+        <img src="images/style71-02.jpg" alt="">
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="center">
+        <p>© 2018 Sieun.<br>All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          }
+        },
+      });
+    </script>
+
+
+  </body>
+</html>
