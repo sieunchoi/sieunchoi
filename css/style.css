@@ -234,12 +234,12 @@ strong {
   margin: 0 0 26px 0;
   font-weight: 700;
 }
-.main-content p {
+.main-content p.info_wrap {
   font-size: 13px;
   margin: 0 0 30px 0;
   line-height: 1.8;
 }
-.main-content p span{
+.main-content p.info_wrap span{
   font-weight: bold;
 }
 .btn, .btn-down {
