@@ -3,50 +3,10 @@
 /* reset */
 .section-title { text-align: left;}
 
-.sub-header{
-  width: 100%;
-  margin-top: 88px;
-  height: 60vh;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  padding: 0;
-}
-.sub-header .center {
-  display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-direction: column;
-}
-.sub-header img {
-  position: absolute;
-  top: 0; right: 0;
-  height: 100%;
-  z-index: 1;
-}
-.sub-header-title {
-  padding: 0 6vw;
-  z-index: 2;
-}
-.sub-header-title p {
-  font-size: 1vw;
-  text-transform: uppercase;
-  color: #fff;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
-}
-.sub-header-title h3 {
-  display: inline-block;
-  font-size: 4vw;
-  font-weight: normal;
-  line-height: 1.1;
-  color: #fff;
-}
+
 .overview{
   position: relative;
-  height: 600px;
+  height: 680px;
 }
 /* .overview .center { position: relative; height: 600px; } */
 .overview-img, .overview-info {
